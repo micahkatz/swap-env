@@ -1,0 +1,19 @@
+{
+  "name": "swap-env",
+  "version": "1.0.0",
+  "description": "This allows you to have multiple .env files and multiple DockerFiles. This will swap your dockerfiles and .env files with your specified environment while preserving your past environment.",
+  "main": "swap-env",
+  "scripts": {
+    "test": "swap-env"
+  },
+  "keywords": [
+    "env",
+    "docker",
+    "dockerfile",
+    "zsh",
+    "script",
+    "shell"
+  ],
+  "author": "Micah Katz",
+  "license": "ISC"
+}

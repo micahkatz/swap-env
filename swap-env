@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+if [ -z "$1" ]
+then
+    echo "Usage: swap-env <env>"
+else
+    ENV_PATH=./env/.env-$1
+    DOCKERFILE_PATH=./env/Dockerfile-$1
+    cp $DOCKERFILE_PATH ./Dockerfile
+    echo "Moved $DOCKERFILE_PATH to Dockerfile"
+    cp $ENV_PATH ./.env
+    echo "Moved $ENV_PATH to .env"
+fi
